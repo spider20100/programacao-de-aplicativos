@@ -209,46 +209,141 @@ button {
     color: #737373;
 }
 
-.suggestions{
-position: fixed;
-top: 45px;
-right: 60px;
+/*--------------------------*/
+.suggestions {
+    position: fixed;
+    top: 100px;
+    right: 275px;
 }
 
-.user{
-    display: fixed;
-    flex-direction: row; 
+.user, 
+.suggestion {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     margin-bottom: 24px;
-    gap: 100px;
-}
-.user log{
-    right: 55px;
-    height: 55px;
-    border-radius: 50px;
-}
-.user div{
-display: fixed;
-flex-direction: column;
-gap: 8px;
-flex: 1;
-}
-.user span{
-    font-size: 12px;
-    color: rgb(47, 47, 56);
-}
-.user{
-    color: rgb(0, 174, 255);
-font-size: 13px;
-font-weight: bold;
-margin-left: 45px;
+    gap: 16px;
 }
 
-.suggestions title{
-    display: fixed;
+.user img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user div,
+.suggestion div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.user span,
+.suggestion span {
+    font-size: 12px;
+    color: #737373;
+}
+
+.user a,
+.suggestion a {
+    color: #0095f6;
+    font-size: 12px;
+    font-weight: bold; 
+    margin-left: 45px;
+}
+
+.suggestion-title {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 14px;
     color: #737373;
+    margin-bottom: 24px;
 }
 
+.suggestion img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(red, green, blue, alpha);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+}
+.modal .content{
+    display: 450px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid white;
+}
+
+.modal header{
+    font-size: 17px;
+}
+
+.modal header button{
+font-size: 18px;
+background-color: transparent;
+}
+
+.modal body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.modal body label{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.modal body input,
+.modal body textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.modal body textarea{
+min-height: 100px;
+resize: vertical;
+
+}
+
+.botaopublicar{
+    width: 100%;
+    background-color: #0095fd;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+    .hidden{
+        display: none;
+    }

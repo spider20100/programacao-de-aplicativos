@@ -1,51 +1,137 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaDev</title>
 
-    <title>primeira pagina</title>
-    <style>
-        body {
-            background-color: red;
-        }
-
-        img {
-            width: 500px;
-            height: 500px;
-            margin-top: 32px;
-            border-radius: 50%;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
 
-    <h1>Mengo</h1>
+    <nav class="sidebar">
+        <h1 class="logo">InstaDev</h1>
 
-    <input type="text" id="nome" placeholder="Digite seu nome"><br />
-    <input type="text" placeholder="qual seu time?" id="text"><br />
-    <input type="password" id="text"><br />
-    <input type="datetime" id="text"><br />
-    <input type="color" id="text"><br />
-    <input type="file" id="text"><br />
-    <input type="radio" id="text"><br />
-    <input type="checkbox" id="text"><br />
+        <nav class="menu">
+            <a href="https://youtube.com" class="menu-item">
+                <span>⌂</span>
+                Início
+            </a>
 
-    <select name="" id="">
-        <option value="">JAVASCRIPT</option>
-        <option value="">HTML</option>
-        <option value="">CSS</option>
-    </select>
-    <br />
-    <br />
+            <a href="#" class="menu-item">
+                <span>⌕</span>
+                Pesquisar
+            </a>
 
-    <button onclick="clicou()">ENTRAR</button><br />
+            <a href="#" class="menu-item">
+                <span>◉</span>
+                Explorar
+            </a>
 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS03IJcnxVjvJ42_kEehEnSXJCTuZ9DjrB09wGxcurpvnZzx1B80H6GUqc&s=10"
-        <p></p>
-    <script>
-        alert("1x0")
-    </script>
+            <a href="#" class="menu-item">
+                <span>✉</span>
+                Mensagens
+            </a>
+
+            <a href="#" class="menu-item">
+                <span>♡</span>
+                Notificações
+            </a>
+
+            <a href="#" class="menu-item">
+                <span>＋</span>
+                Criar
+            </a>
+
+            <a href="#" class="menu-item">
+                <span>○</span>
+                Perfil
+            </a>
+        </nav>
+    </nav>
+
+    <main class="content">
+        <section class="stories">
+            <div class="story">
+                <div class="story-border">
+                    <img src="http://github.com/gustavoroberto1.png">
+                </div>
+            </div>
+
+            <div class="story">
+                <div class="story-border">
+                    <img src="http://github.com/NycollasBelchior.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="feed" id="feed">
+           
+        </section>
+
+    </main>
+
+    <aside class="suggestions">
+        <div class="user">
+            <img src="https://github.com/gustavoroberto1.png" alt="Foto de perfil" />
+            <div>
+                <strong>gustavoroberto1</strong>
+                <span>Gustavo Souza</span>
+            </div>
+            <a href="#">Sair</a>
+        </div>
+
+        <div class="suggestion-title">
+            <strong>Sugestões para você</strong>
+            <a href="">Ver todos</a>
+        </div>
+
+        <div class="suggestion">
+            <img src="https://github.com/gustavoroberto1.png" />
+            <div>
+                <strong>pedrinhdasilva</strong>
+                <span>Sugestão para você</span>
+            </div>
+            <a href="#">Seguir</a>
+        </div>
+        <div class="suggestion">
+            <img src="https://github.com/gustavoroberto1.png" />
+            <div>
+                <strong>pedrinhdasilva</strong>
+                <span>Sugestão para você</span>
+            </div>
+            <a href="#">Seguir</a>
+        </div>
+        <div class="suggestion">
+            <img src="https://github.com/gustavoroberto1.png" />
+            <div>
+                <strong>pedrinhdasilva</strong>
+                <span>Sugestão para você</span>
+            </div>
+            <a href="#">Seguir</a>
+        </div>
+        <div class="suggestion">
+            <img src="https://github.com/Guustaavo.png" />
+            <div>
+                <strong>guustaavo</strong>
+                <span>Sugestão para você</span>
+            </div>
+            <a href="#">Seguir</a>
+        </div>
+        <div class="suggestion">
+            <img src="https://github.com/humbertomartins1710.png" />
+            <div>
+                <strong>doisberto</strong>
+                <span>Sugestão para você</span>
+            </div>
+            <a href="#">Seguir</a>
+        </div>
+
+    </aside>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
